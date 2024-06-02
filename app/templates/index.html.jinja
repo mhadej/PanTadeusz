@@ -1,0 +1,38 @@
+{% extends "base.html.jinja" %}
+
+{% block title %}
+    <p class="fs-1 fw-semibold">Pan Tadeusz,</p><p class="fs-2"> czyli ostatni zajazd na Litwie:<br> historia szlachecka z roku 1811 i 1812<br> we dwunastu księgach wierszem.</p>
+{% endblock %}
+
+{% block menu %}
+    <div class="row">
+        <div class="col-md-2 mt-4 d-flex justify-content-center align-items-center position-fixed top-0">
+            <div class="card border-success mb-3 border border-3 border-info w-auto p-3 bg-dark">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h2 class="text-white">Spis treści:</h2>
+                        <div class="list-group list-group-flush">
+                                <a href="{{url_for('index')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-bottom border-info p-2">Home</a>
+                                <a href="{{url_for('k1')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga I</a>
+                                <a href="{{url_for('k2')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga II</a>
+                                <a href="{{url_for('k3')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga III</a>
+                                <a href="{{url_for('k4')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga IV</a>
+                                <a href="{{url_for('k5')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga V</a>
+                                <a href="{{url_for('k6')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga VI</a>
+                                <a href="{{url_for('k7')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga VII</a>
+                                <a href="{{url_for('k8')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga VIII</a>
+                                <a href="{{url_for('k9')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga IX</a>
+                                <a href="{{url_for('k10')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga X</a>
+                                <a href="{{url_for('k11')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-bottom border-info p-2">Księga XI</a>
+                                <a href="{{url_for('k12')}}" class="list-group-item list-group-item-action bg-dark text-light fs-6 border-top border-info p-2">Księga XII</a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block plot %}
+    <img src="static/bg.png" class="img-fluid border rounded-4 border-info border-3" alt="pantadek">
+{% endblock %}
